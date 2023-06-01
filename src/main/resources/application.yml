@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:products
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update      
+    
+server:
+  port: 9090  
+  
+logging:
+  level:
+    root: INFO
+    '[com.myapp.spring]': INFO
+    '[org.springframework.web]': INFO
+  file:
+    name: C:\software\apache-tomcat-9.0.65-prod\logs\devops.log
